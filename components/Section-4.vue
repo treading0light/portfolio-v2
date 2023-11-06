@@ -25,7 +25,7 @@
 			<h3 class="text-3xl absolute bottom-10 left-[50%] centerWidth text-center">Click one</h3>
 		</div>
 
-		<ImageViewer v-if="cert" @close="closeViewer" :cert="cert" ref="imageViewer" />
+		<ImageViewer ref="imageViewer" />
 
 
 
@@ -35,53 +35,12 @@
 </template>
 
 <script setup>
-	useHead({
-		link: [
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/js-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/css-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/html-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/php-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/python-cert.png'
-			},
-		]
-	})
-
-	const cert = ref(null)
 	const imageViewer = ref(null)
-	const certs = {
-		'js-cert': '/images/certs/js-cert.png',
-		'css-cert': '/images/certs/css-cert.png',
-		'html-cert': '/images/certs/html-cert.png',
-		'php-cert': '/images/certs/php-cert.png',
-		'python-cert': '/images/certs/python-cert.png'
-	}
+	
 
 	// ImageViewer is rendered only when cert.value is filled
 	const openViewer = (name) => {
-		cert.value = certs[name]
-	}
-
-	const closeViewer = () => {
-		cert.value = null
+		imageViewer.value.open(name)
 	}
 	
 </script>

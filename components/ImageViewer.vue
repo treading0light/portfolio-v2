@@ -1,31 +1,69 @@
 <template>
 
-	<dialog @close="emit('close')" id="image-modal" ref="imageModal" class="w-1/2">
-		<div class="">
+	<dialog @close="handleClose" id="image-modal" ref="imageModal" class="w-1/2">
+		<div >
 			<!-- <form method="dialog">
 				<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
 			</form> -->
 			<button @click="imageModal.close()" class="btn btn-sm btn-circle btn-ghost bg-black hover:bg-gray-500 absolute right-2 top-2">✕</button>
-			<NuxtImg class="" :src="cert" />
+			<NuxtImg v-if="cert" :src="cert" />
 		</div>
 	</dialog>
 </template>
 
 <script setup>
+
+useHead({
+		link: [
+			{
+				rel: "preload",
+				as: "image",
+				href: '/images/certs/js-cert.png'
+			},
+			{
+				rel: "preload",
+				as: "image",
+				href: '/images/certs/css-cert.png'
+			},
+			{
+				rel: "preload",
+				as: "image",
+				href: '/images/certs/html-cert.png'
+			},
+			{
+				rel: "preload",
+				as: "image",
+				href: '/images/certs/php-cert.png'
+			},
+			{
+				rel: "preload",
+				as: "image",
+				href: '/images/certs/python-cert.png'
+			},
+		]
+	})
+
+	const certs = {
+		'js-cert': '/images/certs/js-cert.png',
+		'css-cert': '/images/certs/css-cert.png',
+		'html-cert': '/images/certs/html-cert.png',
+		'php-cert': '/images/certs/php-cert.png',
+		'python-cert': '/images/certs/python-cert.png'
+	}
+
+	const cert = ref(null)
 	const imageModal = ref(null)
 
-	// img url given by parent component
-	const props = defineProps({
-		cert: String,
-	})
+
 	const emit = defineEmits(['close'])
 
-	onMounted(() => {
+	const open = (name) => {
+		cert.value = certs[name]
 		imageModal.value.showModal()
-	})
+	}
 
-	const open = () => {
-		imageModal.value.showModal()
+	const handleClose = () => {
+		cert.value = null
 	}
 
 	defineExpose({
