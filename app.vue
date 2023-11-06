@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="dark" id="main">
+  <div data-theme="night" id="main">
     <Head>
       <Meta name="og:image" content="/images/og-image.PNG" />
       <Meta name="og:image:type" content="image/PNG" />

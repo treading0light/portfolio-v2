@@ -1,5 +1,5 @@
 <template>
-	<div id="stack" class="w-2/3 h-96 relative mr-[10%]">
+	<div id="stack" class="w-2/3 h-[500px] relative mr-[10%]">
 
 		<div v-for="project in projects"
 		class="flip-card card text-center absolute bg-base-200 border-4 border-primary h-[100%] w-10/12
@@ -19,6 +19,18 @@
 			<figure><ImageWithDetails :details="project.details" :img="project.img" /></figure>
 			
 		</div>
+<!-- 
+		<div v-for="project in projects" class="card flip-card h-[100%] w-full lg:card-side bg-base-100 shadow-xl border-4 border-primary absolute">
+			<figure><ImageWithDetails :img="project.img" :details="project.details" /></figure>
+			<div class="card-body">
+				<h2 class="card-title">{{ project.name }}</h2>
+				<p>{{ project.description }}</p>
+				<div class="card-actions justify-end">
+					<NuxtLink v-if="project.link" class="btn btn-primary">Visit</NuxtLink>
+					<NuxtLink v-if="project.codeLink" class="btn btn-primary">Code</NuxtLink>
+				</div>
+			</div>
+		</div> -->
 		
 	</div>
 	
