@@ -19,6 +19,16 @@
   // nav = template ref
   // scrollTop can pass current window scrollTop
   // to child components
+
+  useHead({
+    link: [
+    {
+				rel: "preload",
+				as: "image",
+				href: '/images/background-dark.jpg'
+			},
+    ]
+  })
   
   const nav = ref(null)
   const scrollTop = ref(0)
