@@ -2,8 +2,8 @@
 	<div class="w-full mt-36 flex flex-col gap-10 lg:gap-10 h-screen items-center justify-start">
 
 		<div id="content" class="w-1/2 text-base-content text-left ">
-			<p class="text-4xl md:text-6xl lg:text-7xl">Tony Green</p>
-	        <h1 class="m-auto ml-5 text-3xl md:text-5xl lg:text-6xl text-center">App Developer</h1>
+			<p class="text-2xl md:text-3xl lg:text-7xl">Tony Green</p>
+	        <h1 class="m-auto ml-5 text-xl md:text-2xl lg:text-6xl text-center">App Developer</h1>
         </div>
 
 		<div class="w-full flex flex-col items-center">
