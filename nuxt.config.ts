@@ -3,8 +3,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    'nuxt-icon',
   ],
-
+  vue: {
+    compilerOptions: {
+      isCustomElement: tag => tag.startsWith('swiper-')
+    }
+  },
   devtools: { enabled: true }
 })

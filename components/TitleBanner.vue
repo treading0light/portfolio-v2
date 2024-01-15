@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full">
-		<h2 class="text-center py-5 text-4xl mb-20 w-3/4 md:w-1/2 m-auto text-base-300">{{ title }}</h2>
+		<h2 class="text-center py-5 text-4xl w-3/4 md:w-1/2 m-auto text-base-300">{{ title }}</h2>
 	</div>
 </template>
 

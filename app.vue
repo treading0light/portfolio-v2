@@ -5,6 +5,7 @@
       <Meta name="og:image:type" content="image/PNG" />
       <Meta name="og:image:width" content="200" />
       <Meta name="og:image:height" content="200" />
+
     </Head>
 
     <GoodNav ref="nav" />
@@ -27,7 +28,13 @@
 				as: "image",
 				href: '/images/background-dark.jpg'
 			},
-    ]
+    ],
+    script: [
+      {
+        src: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js',
+        type: 'text/javascript'
+      }
+    ],
   })
   
   const nav = ref(null)

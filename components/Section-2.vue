@@ -1,9 +1,12 @@
 <template>
-	<div id="about" class="w-full flex flex-col items-center justify-center">
+	<div id="about" class="flex flex-col items-center gap-10">
 
 		<TitleBanner title="About Me" />
 
-		<Bio />
+		<div class="bg-neutral w-full flex flex-col md:flex-row  items-center justify-center">
+			<Bio />
+		</div>
+
 
 		
 	</div>
