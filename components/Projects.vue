@@ -1,5 +1,6 @@
 <template>
 	<div id="stack" class="w-2/3 h-[500px] relative mr-[10%]">
+	<!-- <div id="stack" class="stack w-2/3 relative h-fit my-20"> -->
 
 		<div v-for="project in projects"
 		class="flip-card card text-center absolute bg-base-200 border-4 border-primary h-[100%] w-10/12

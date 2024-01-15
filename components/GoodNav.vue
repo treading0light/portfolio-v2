@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div id="topNav" ref="top" class="fixed top-5 w-full flex justify-center gap-10 sm:gap-40 pointer-events-none"
+        <div id="topNav" ref="top" class="fixed top-5 w-full flex justify-center gap-10 sm:gap-40 pointer-events-none"     
         style="z-index: 15;">
 
             
@@ -72,6 +72,10 @@
         // must expose methods to be called by parent
         scrollDown,
         scrollUp
+    })
+
+    onMounted(() => {
+        
     })
 	
 </script>
