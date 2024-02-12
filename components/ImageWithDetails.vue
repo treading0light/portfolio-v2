@@ -1,9 +1,9 @@
 <template>
 	<div class="relative mt-5" @mouseover="handleHover('show')" @mouseleave="handleHover('hide')">
 
-			<NuxtImg class="w-3/4 mask mask-parallelogram-3 m-auto" :src="img" />
+			<NuxtImg class="w-[300px] mask mask-parallelogram-3 m-auto" :src="img" />
 
-			<div ref="detailBox" class="w-2/3 h-full bg-base-100 opacity-90 absolute top-0 right-1/4 rounded-xl flex flex-col p-2 invisible
+			<!-- <div ref="detailBox" class="w-2/3 h-full bg-base-100 opacity-90 absolute top-0 right-1/4 rounded-xl flex flex-col p-2 invisible
 			text-sm
 			md:text-xl
 			lg:text-2xl
@@ -15,7 +15,7 @@
 					<li v-for="detail in details">{{ detail }}</li>
 				</ul>
 
-			</div>
+			</div> -->
 		</div>
 </template>
 

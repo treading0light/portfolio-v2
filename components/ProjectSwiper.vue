@@ -1,8 +1,8 @@
 <template>
-    <swiper-container ref="swiper" class="w-2/3"
+    <swiper-container ref="swiper" class="w-full"
      speed="500" 
      loop="true"
-    :slides-per-view="1.25"
+    :slides-per-view="2"
     :space-between="spaceBetween"
     :centered-slides="true"
     :pagination="{
@@ -17,9 +17,9 @@
     @swiperprogress="onProgress"
     @swiperslidechange="onSlideChange">
 
-    <swiper-slide v-for="project in projects" class="card md:card-side w-full h-max text-center bg-base-200 border-4 border-primary items-center">
+    <swiper-slide v-for="project in projects" class="card md:card-side w-1/3 h-[100%] text-center bg-base-200 border-4 border-primary items-center">
 
-			<div class="flex flex-col gap-3">
+			<div class="flex flex-col gap-3 my-auto h-[75%]">
 				<h2 class="text-center bold text-lg lg:text-3xl">{{ project.name }}</h2>
 				<p class="text-sm lg:text-xl">{{ project.description }}</p>
 
@@ -30,7 +30,7 @@
 
 			</div>
 
-			<figure><ImageWithDetails :details="project.details" :img="project.img" /></figure>
+			<figure class="w-1/2"><ImageWithDetails :details="project.details" :img="project.img" /></figure>
 			
         
     </swiper-slide>

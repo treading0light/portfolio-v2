@@ -1,5 +1,5 @@
 <template>
-	<div id="projects" class="w-full flex flex-col gap-10 items-center">
+	<div id="projects" class="w-full mb-20 flex flex-col gap-10 items-center">
 
 		<TitleBanner title="My Projects" />
 

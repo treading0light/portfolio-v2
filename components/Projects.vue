@@ -3,7 +3,7 @@
 	<!-- <div id="stack" class="stack w-2/3 relative h-fit my-20"> -->
 
 		<div v-for="project in projects"
-		class="flip-card card text-center absolute bg-base-200 border-4 border-primary h-[100%] w-10/12
+		class="flip-card card text-center bg-base-200 border-4 border-primary min-h-[500px] w-1/3
 		p-1 sm:p-10 sm:card-side sm:items-center">
 
 			<div class="flex flex-col gap-3">
