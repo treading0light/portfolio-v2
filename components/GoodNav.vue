@@ -2,7 +2,7 @@
     <div>
 
         <div id="topNav" ref="top" class="fixed top-5 w-full flex justify-center gap-10 sm:gap-40 pointer-events-none"     
-        style="z-index: 15;">
+        style="z-index: 30;">
 
             
             <NuxtLink @click="openTab('https://twitter.com/tony0green')"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 26 26" class="fill-white pointer-events-auto hover:cursor-pointer">
@@ -24,9 +24,9 @@
         md:text-4xl md:gap-44
         
         ">    
-            <h3 @click="scrollTo('about')" class="-rotate-90 hover:cursor-pointer">About Me</h3>
-            <h3 @click="scrollTo('projects')" class="-rotate-90 hover:cursor-pointer">Projects</h3>
-            <h3 @click="scrollTo('certs')" class="-rotate-90 hover:cursor-pointer">Certs</h3>
+            <h3 @click="scrollTo('about')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">About Me</h3>
+            <h3 @click="scrollTo('projects')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">Projects</h3>
+            <h3 @click="scrollTo('certs')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">Certs</h3>
         </div>
 
     </div>
@@ -55,7 +55,7 @@
     }
 
     const scrollTo = (id) => {
-        const pos = document.getElementById(id).offsetTop - 100
+        const pos = document.getElementById(id).offsetTop - 10
 
         window.scroll({
             top: pos,

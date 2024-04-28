@@ -1,8 +1,6 @@
 <template>
 	<div id="certs" class="w-full flex flex-col items-center mb-20">
-		<TitleBanner title="Certificates" />
-
-		<div class="w-9/12 lg:w-2/3 relative ">
+		<div class="w-9/12 lg:w-2/3 relative">
 			<div class="w-full h-full flex items-center justify-center bg-base-300 rounded-lg border-4 border-primary">
 				<p class="my-52 invisible">Make vanish</p>
 			</div>

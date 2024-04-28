@@ -10,7 +10,7 @@
 			<AnimateText v-if="animationFinished == false" @finished="handleFinished" />
 
 			<div ref="arrowIcon" class="m-auto mt-20 opacity-0">
-				<Icon name="subway:down-2" size="6em" color="#3abff8" />		
+				<Icon name="subway:down-2" size="6em" color="#3abff8" class="hover:cursor-pointer" @click="scrollTo('about')" />		
 			</div>
 			
 		</div>
@@ -33,6 +33,15 @@ const handleFinished = async () => {
 
 	arrowIcon.value.classList.add('opacity-100', 'down-arrow')
 }
+
+const scrollTo = (id) => {
+        const pos = document.getElementById(id).offsetTop - 10
+
+        window.scroll({
+            top: pos,
+            behavior: 'smooth'
+        })
+    }
 	
 </script>
 

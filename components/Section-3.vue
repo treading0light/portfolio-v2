@@ -1,5 +1,5 @@
 <template>
-	<div id="projects" class="w-full mb-20 flex flex-col gap-10 items-center">
+	<div id="projects" class="w-9/12 lg:w-4/5 mb-20 flex flex-col gap-16 items-center">
 
 		<TitleBanner title="My Projects" />
 
@@ -43,8 +43,7 @@
       name: 'Healthy Fleet',
       description: "An app designed to intelligently track a fleet's vehicle maintenance schedule. Demo available.",
       img: "/images/hf-logo-edit.png",
-      // link: "https://www.healthyfleet.org",
-      link: '',
+      link: "https://www.healthyfleet.org",
       codeLink: "https://github.com/treading0light/healthy-fleet",
       details: [
         "PHP/Laravel",

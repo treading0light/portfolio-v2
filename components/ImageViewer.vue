@@ -1,6 +1,6 @@
 <template>
 
-	<dialog @close="handleClose" id="image-modal" ref="imageModal" class="w-1/2">
+	<dialog @close="handleClose" id="image-modal" ref="imageModal" class="w-3/4 lg:w-1/2">
 		<div >
 			<!-- <form method="dialog">
 				<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>

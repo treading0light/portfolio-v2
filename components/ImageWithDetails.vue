@@ -1,5 +1,7 @@
 <template>
-	<div class="relative mt-5" @mouseover="handleHover('show')" @mouseleave="handleHover('hide')">
+	<!-- <div class="relative mt-5" @mouseover="handleHover('show')" @mouseleave="handleHover('hide')"> -->
+	<div class="relative mt-5">
+
 
 			<NuxtImg class="w-[300px] mask mask-parallelogram-3 m-auto" :src="img" />
 

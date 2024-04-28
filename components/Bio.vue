@@ -1,12 +1,14 @@
 <template>
 	<div class="card min-h-screen md:card-side">
 
-		<figure class="w-1/2 m-auto"><NuxtImg class="mask mask-circle w-2/3 md:ml-24 lg:w-1/2" src="/images/tony.jpg" /></figure>
+		<figure class="w-1/2 m-auto"><NuxtImg class="mask mask-circle w-3/4 md:ml-24 lg:w-1/2" src="/images/tony.jpg" /></figure>
 
 		<div class="card-body md:w-1/2">
 
 			<div class="card-title md:mt-[20%] ml-10 md:ml-0 justify-start">
-				<h2 v-for="obj in textOptions" @click="makeActive(obj.id)" :id="obj.id" class="about-tab p-2 rounded-t-lg text-neutral-content hover:cursor-pointer">{{ obj.title }}</h2>
+				<h2 v-for="obj in textOptions" @click="makeActive(obj.id)" :id="obj.id" 
+					class="about-tab p-2 rounded-t-lg text-neutral-content hover:cursor-pointer text-sm sm:text-lg"
+					>{{ obj.title }}</h2>
 			</div>
 
 			<p class="md:text-2xl text-neutral-content w-2/3 mx-auto mt-10" >{{ text }}</p>			
