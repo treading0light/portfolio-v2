@@ -26,7 +26,11 @@
         ">    
             <h3 @click="scrollTo('about')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">About Me</h3>
             <h3 @click="scrollTo('projects')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">Projects</h3>
-            <h3 @click="scrollTo('certs')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">Certs</h3>
+            <!-- <h3 @click="scrollTo('certs')" class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">Certs</h3> -->
+            <h3 class="-rotate-90 pointer-events-auto hover:cursor-pointer" style="z-index: 31;">
+                <NuxtLink to="/blog">Blog</NuxtLink>
+            </h3>
+
         </div>
 
     </div>

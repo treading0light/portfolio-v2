@@ -13,35 +13,35 @@
 
 <script setup>
 
-useHead({
-		link: [
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/js-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/css-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/html-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/php-cert.png'
-			},
-			{
-				rel: "preload",
-				as: "image",
-				href: '/images/certs/python-cert.png'
-			},
-		]
-	})
+// useHead({
+// 		link: [
+// 			{
+// 				rel: "preload",
+// 				as: "image",
+// 				href: '/images/certs/js-cert.png'
+// 			},
+// 			{
+// 				rel: "preload",
+// 				as: "image",
+// 				href: '/images/certs/css-cert.png'
+// 			},
+// 			{
+// 				rel: "preload",
+// 				as: "image",
+// 				href: '/images/certs/html-cert.png'
+// 			},
+// 			{
+// 				rel: "preload",
+// 				as: "image",
+// 				href: '/images/certs/php-cert.png'
+// 			},
+// 			{
+// 				rel: "preload",
+// 				as: "image",
+// 				href: '/images/certs/python-cert.png'
+// 			},
+// 		]
+// 	})
 
 	const certs = {
 		'js-cert': '/images/certs/js-cert.png',

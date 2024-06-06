@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
   theme: {
     extend: {
       keyframes: {
@@ -14,9 +20,16 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require('@tailwindcss/typography')
+  ],
   daisyui: {
-    themes: ["night", "cupcake", "lofi", "dark"],
+    themes: [
+    'night',
+		'forest',
+		'dracula',
+		'synthwave'],
   },
 }
 

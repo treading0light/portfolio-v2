@@ -1,7 +1,6 @@
 <template>
     <swiper-container ref="swiper" class="w-full"
      speed="500" 
-     loop="true"
     :slides-per-view="1.2"
     :space-between="spaceBetween"
     :centered-slides="true"
@@ -51,11 +50,11 @@
 
     const onProgress = (e) => {
     const [swiper, progress] = e.detail;
-    console.log(progress)
+    // console.log('progress'+progress)
     }
 
     const onSlideChange = (e) => {
-    console.log('slide changed')
+    // console.log('slide changed')
     }
 
     const nextSlide = () => {
