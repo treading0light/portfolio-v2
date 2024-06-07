@@ -11,6 +11,11 @@ tags:
 - Nuxt.js
 - Vue.js
 - CSS
+
+ogImage:
+    component: NuxtSeo
+    props:
+        image: /images/card-stack.jpg
 draft: false
 
 ---

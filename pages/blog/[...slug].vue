@@ -21,6 +21,7 @@
 </template>
 
 <script setup>
+	defineOgImage()
 	definePageMeta({
 		layout: 'blog',
 
