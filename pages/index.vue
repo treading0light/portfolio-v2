@@ -12,3 +12,12 @@
   </div>
 
 </template>
+
+<script setup>
+defineOgImageComponent('Frame', {
+  title: 'Tony Green',
+  description: 'A showcase of my work',
+  colorMode: 'dark',
+  image: '/images/matrix.jpg'
+})
+</script>

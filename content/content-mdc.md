@@ -5,6 +5,11 @@ thumbnail: /images/nuxt-markdown.png
 slug: content-mdc
 author: Tony Green
 draft: true
+path: /images/nuxt-markdown.png
+ogImage:
+    component: Frame
+    props:
+        image: /images/nuxt-markdown.png
 
 ---
 

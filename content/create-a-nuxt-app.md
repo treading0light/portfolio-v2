@@ -5,7 +5,11 @@ thumbnail: /images/nuxtjs-logo.png
 slug: create-a-nuxt-app
 author: Tony Green
 draft: false
-
+path: /images/nuxtjs-logo.png
+ogImage:
+    component: Frame
+    props:
+        image: /images/nuxtjs-logo.png
 ---
 
 For me, getting a new project set up is the most difficult part of the process. While I face challenges throughout the 

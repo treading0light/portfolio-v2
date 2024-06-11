@@ -1,6 +1,6 @@
 ---
 title: Make your own animated stack of elements.
-description: I show you how to make a stack of Divs that will flip positions.
+description: I show you how to make a stack of cards that flip using your favorite array methods.
 thumbnail: /images/card-stack.jpg
 slug: card-stack
 author: Tony Green
@@ -11,9 +11,9 @@ tags:
 - Nuxt.js
 - Vue.js
 - CSS
-
+path: /images/card-stack.jpg
 ogImage:
-    component: NuxtSeo
+    component: Frame
     props:
         image: /images/card-stack.jpg
 draft: false
