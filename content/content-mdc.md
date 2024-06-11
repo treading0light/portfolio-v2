@@ -36,7 +36,7 @@ like this "quick aside" component!
 My **Quick Aside** component has been called within the markdown file like so:
 
 
-```
+```javascript
 // Start text on same column
 ::quick-aside
 Text to display
